@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Letta</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body id="reload">
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <a href="#" class="navbar-brand " float-left> <strong>Letta</strong>
+            </a>
+            <button id="bt-eventsSearch" class="btn btn-outline-light" float-right>Buscar
+					eventos</button>
+            <button id="bt-home" class="btn btn-outline-light" float-right>Inicio</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="eventsSearch-container"></div>
+    </div>
+
+    <div class="container">
+        <div id="eventsList-container"></div>
+    </div>
+
+
+
+    <br />
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/dao/events.js"></script>
+    <script type="text/javascript" src="js/view/events.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function(event) {
+                $("#eventsList-container").empty();
+
+                if ($("#eventsList-container").html() == "") {
+
+                    var eventsListView = new EventsListView(new EventsDAO(),
+                        'eventsList-container', 'eventsList-container'
+                    );
+                    eventsListView.init();
+                }
+            }
+
+        );
+
+        $(document).ready(
+            function() {
+                $('#bt-eventsSearch').click(function(event) {
+
+                    $("#eventsList-container").empty();
+
+                    $("#eventsSearch-container").empty();
+
+                    if ($("#eventsSearch-container").html() == "") {
+
+                        var eventsSearchView = new EventsSearchView(new EventsDAO(),
+                            'eventsSearch-container', 'eventsSearch-container', 'eventsSearch-container'
+                        );
+                        eventsSearchView.init();
+                    }
+                });
+            }
+        );
+
+        $(document).ready(
+            function() {
+                $('#bt-home').click(function(event) {
+                    $("#eventsList-container").empty();
+                    $("#eventsSearch-container").empty();
+                    if ($("#eventsList-container").html() == "") {
+
+                        var eventsListView = new EventsListView(new EventsDAO(),
+                            'eventsList-container', 'eventsList-container'
+                        );
+                        eventsListView.init();
+                    }
+                });
+            }
+        );
+
+
+
+
+        var verify = function() {
+            var inputVal = document.getElementById("searchInput");
+            if (inputVal.value.length >= 2) {
+                document.getElementById("btnSubmit").disabled = false;
+            } else {
+                document.getElementById("btnSubmit").disabled = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

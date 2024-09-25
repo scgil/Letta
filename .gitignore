@@ -1,0 +1,20 @@
+# General
+/bak
+
+# Eclipse
+.project
+.classpath
+.settings
+WebContent
+
+# Maven
+/bin
+/target
+/assembly
+
+# Testing
+/servers
+C:\\nppdf32Log\\debuglog.txt
+
+# Angular
+src/main/angular

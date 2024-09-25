@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+
+<dataset>
+	<!-- Las fechas se especifican en el formato yyyy-mm-dd hh:mm:ss -->
+	<events id="1" title="Una Pelicula" description="Hablamos de una pelicula" category="cine" eventDate="2022-06-04 13:45:00" capacity="4" place="Buenos Aires" idPartaker="1"/>
+	<events id="2" title="Un Libro unico" description="Hablamos de un libro pepe" category="libros" eventDate="2022-05-31 11:30:00" capacity="10" place="Casa campo Alberto" img="../Images/ImagenEjemplo" idPartaker="1"/>
+	<events id="3" title="Un librito pepe" description="Hablamos de un libro pequeño" category="libros" eventDate="2022-07-25 11:30:00" capacity="3" place="Piso de Juan" idPartaker="2"/>
+	<events id="4" title="Un Libro pasado" description="Hablamos de un libro pero fue hace tiempo" category="libros" eventDate="2020-08-20 11:30:00" capacity="10" place="Casa campo Alberto" idPartaker="2"/>
+	<events id="5" title="Una Peli del futuro" description="Hablamos de una peli que saldrá en el futuro" category="cine" eventDate="2022-05-25 11:30:00" capacity="5" place="Casa Paco" idPartaker="2"/>
+	<events id="6" title="Una Serie de ahora" description="Hablamos de una serie de actualidad" category="tv" eventDate="2022-04-20 11:30:00" capacity="6" place="Bar Restaurante Maria Pita" idPartaker="2"/>
+	<events id="7" title="Una Felicidad en yoga" description="Hacemos yoga en pareja" category="ocio" eventDate="2021-09-29 11:30:00" capacity="2" place="Parque de San Lazaro" idPartaker="2"/>
+	<events id="8" title="Serie de ficcion" description="Hablamos de una serie de ficcion" category="tv" eventDate="2023-09-30 11:30:00" capacity="4" place="Casa campo Alberto" idPartaker="1"/>
+	<events id="9" title="Serie de accion" description="Hablamos de una serie de accion" category="tv" eventDate="2022-08-29 11:30:00" capacity="5" place="Parque" idPartaker="1"/>
+	<events id="10" title="Serie de romance" description="Hablamos de una serie de romance" category="tv" eventDate="2022-07-29 11:30:00" capacity="8" place="Calle" idPartaker="1"/>
+	<events id="11" title="Serie policial" description="Hablamos de una serie policial" category="tv" eventDate="2022-06-29 11:30:00" capacity="5" place="Parque" idPartaker="2"/>
+	<events id="12" title="Serie detectivesca" description="Hablamos de una serie detectivesca" category="tv" eventDate="2022-05-29 11:30:00" capacity="4" place="Esquina" idPartaker="2"/>
+	<events id="13" title="Ir a gimnasio" description="Hablamos de ir a un gimnasio" category="ocio" eventDate="2022-04-29 11:30:00" capacity="4" place="Casa" idPartaker="2"/>
+	<events id="14" title="Ir a jugar a tenis" description="Hablamos de ir a jugar un tenis" category="ocio" eventDate="2022-03-29 11:30:00" capacity="20" place="Plaza mayor" idPartaker="1"/>
+	<events id="15" title="Ir a jugar al futbol" description="Hablamos de ir a jugar un futbol" category="ocio" eventDate="2022-02-29 11:30:00" capacity="2" place="Trastero" idPartaker="2"/>
+	<events id="5" title="Titulo nuevo" description="Descripcion nueva" category="libros" eventDate="2022-06-30 11:00:00" capacity="10" place="Lugar nuevo" img="../Images/ImagenEjemplo" idPartaker="2"/>
+
+	<users login="normal" password="7bf24d6ca2242430343ab7e3efb89559a47784eea1123be989c1b2fb2ef66e83"/>
+	
+</dataset>
